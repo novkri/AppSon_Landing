@@ -9,31 +9,35 @@
   <link rel="stylesheet" href="./css/modern-normalize.css">
   <link rel="stylesheet" href="./css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
 </head>
 <body>
   <!-- +burger -->
-  <header>
+  <header class="navbar navbar-expand-lg  navbar-light bg-light ">
     <!-- logo ? -->
-    <div class="header-navbar__logo">AppSon</div>
+    <div class="logo">AppSon</div>
 
-
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">home</a></li>
-        <li class="nav__item"><a href="#features" class="nav__link">features</a></li>
-        <li class="nav__item"><a href="#pricing" class="nav__link">pricing</a></li>
-        <li class="nav__item"><a href="#pages" class="nav__link">pages</a></li>
-      </ul>
-    </nav>
-    <!-- <button class="btn signup__btn"></button> -->
-    <div class="btn btn--sign-up">
-      <a href="#" class="">SIGN UP</a>
+    <div class="navbar__menu">
+      <nav class="collapse navbar-collapse  nav" id="navbarMenu">
+        <ul class="nav__list navbar-nav">
+          <li class="nav__item"><a href="#" class="nav__link nav__link--active">home</a></li>
+          <li class="nav__item"><a href="#features" class="nav__link">features</a></li>
+          <li class="nav__item"><a href="#pricing" class="nav__link">pricing</a></li>
+          <li class="nav__item"><a href="#pages" class="nav__link">pages</a></li>
+        </ul>
+      </nav>
+  
+      <!-- <button class="btn signup__btn"></button> -->
+      <div class="btn btn--signup">
+        <a href="#" class="">SIGN UP</a>
+      </div>
+  
+      <!-- burger -->
+      <!-- запретить скролл при открытом -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Menu navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-
-    <!-- burger -->
-    <div class="header-navbar__burger">
-      <span></span>
-    </div> 
   </header>
 
   <main>
@@ -59,7 +63,10 @@
 
         <div class="scroll-down">
           <a href="#features" class="scroll-down__btn">
-            <img src="img/header/Scroll.jpg" alt="">
+            <!-- <i class="bi bi-arrow-down"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
+            </svg> 
           </a>
         </div>
       </div>
