@@ -14,7 +14,7 @@
   <!-- +burger -->
   <header>
     <!-- logo ? -->
-    <div class="section-header-navbar__logo">AppSon</div>
+    <div class="header-navbar__logo">AppSon</div>
 
 
     <nav class="nav">
@@ -31,15 +31,15 @@
     </div>
 
     <!-- burger -->
-    <div class="section-header-navbar__burger">
+    <div class="header-navbar__burger">
       <span></span>
     </div> 
   </header>
 
   <main>
     <!-- first page section -->
-    <section class="section-header">
-      <div class="section-inner">
+    <section class="header">
+      <div class="inner">
         <div class="offer">
           <h1 class="offer__title">Best Desktop App for You</h1>
           <p class="offer__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -66,8 +66,8 @@
     </section>
 
     <!-- features section -->
-    <section class="section-features" id="features">
-      <div class="section-inner">
+    <section class="features" id="features">
+      <div class="inner">
         <div class="feature">
           <div class="feature-card">
             <div class="feature-card__icon">
@@ -98,8 +98,8 @@
     </section>
 
     <!-- about section -->
-    <section class="section-about">
-      <div class="section-inner">
+    <section class="about">
+      <div class="inner">
         <div class="about-card">
           <!-- diamond - ??? -->
           <!-- <div class="diamond"></div> ?? -->
@@ -138,11 +138,11 @@
 
 
     <!-- how page section -->
-    <section class="section-how">
-      <!--  <div class="section-inner how"> ??? bg dots! -->
-      <div class="section-inner">
-        <h3 class="section-how__title">How Does It Works?</h3>
-        <div class="section-how__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+    <section class="how">
+      <!--  <div class="inner how"> ??? bg dots! -->
+      <div class="inner">
+        <h3 class="how__title">How Does It Works?</h3>
+        <div class="how__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
         </div>
 
@@ -172,8 +172,8 @@
 
 
     <!-- pricing page section -->
-    <section class="section-pricing" id="pricing">
-      <div class="section-inner">
+    <section class="pricing" id="pricing">
+      <div class="inner">
         <div class="choose-plan">
           <h4 class="choose-plan__title">Pricing Plan</h4>
           <p class="choose-plan__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
@@ -239,14 +239,14 @@
 
 
     <!-- slider section -->
-    <section class="section-slider">
+    <section class="slider">
       <!-- bootstrap slider -->
     </section>
 
 
     <!-- lates news page section -->
-    <section class="section-latest">
-      <div class="section-inner">
+    <section class="pages" id="pages">
+      <div class="inner">
         <!-- контейнер -->
         <div class="news">
           <div class="news__header">
@@ -270,22 +270,46 @@
                 do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                 exercitation ullamco laboris.
               </p>
-              <a href="#" class="section-latest__main-page-read-more">Continue Reading &rarr;</a>
+              <a href="#" class="latest__main-page-read-more">Continue Reading &rarr;</a>
             </div>
 
             <!-- остальные новости (article tag) -->
             <div class="news-others">
+              <!-- 1 -->
               <article class="news-others__card">
                 <div class="news-others__image">
                   <img src="img/latest/1.jpg" alt="">
                 </div>
                 <div class="news-others__body">
-                  <h6 class="news-others__title"></h6>
-                  <p class="news-others__text"></p>
+                  <h6 class="news-others__title">The master bedroom suite is phenomenally spacious</h6>
+                  <p class="news-others__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod.</p>
                 </div>
               </article>
 
-              <!-- ..... -->
+              <!-- 2 -->
+              <article class="news-others__card">
+                <div class="news-others__image">
+                  <img src="img/latest/2.jpg" alt="">
+                </div>
+                <div class="news-others__body">
+                  <h6 class="news-others__title">The master bedroom suite is phenomenally spacious</h6>
+                  <p class="news-others__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod.</p>
+                </div>
+              </article>
+
+              <!-- 3 -->
+              <article class="news-others__card">
+                <div class="news-others__image">
+                  <img src="img/latest/3.jpg" alt="">
+                </div>
+                <div class="news-others__body">
+                  <h6 class="news-others__title">The master bedroom suite is phenomenally spacious</h6>
+                  <p class="news-others__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod.</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
@@ -293,12 +317,69 @@
     </section>
 
 
-    
+
     <!-- free trial section -->
-    <!-- sunscribe section -->
+    <!-- combine into 1 section PREFOOTER ? -->
+    <section class="trial">
+      <div class="trial__container">
+        <div class="trial__info">
+          <h6 class="trial__title">Try 30 Days Free Trial</h6>
+          <p class="trial__text">No credit card required</p>
+        </div>
+        <div class="trial__button">
+          <a href="" class="btn--filled">Get Started &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- subscribe section -->
+    <section class="subscribe">
+      <div class="subscribe__container">
+        <p class="subscribe__title">AppSon</p>
+        <form action="#" class="subscribe__form">
+          <input type="text" placeholder="Enter Your Email">
+          <input type="submit" value="SUBSCRIBE">
+        </form>
+      </div>
+    </section>
+    <!-- combine into 1 section ? -->
   </main>
 
-  <footer></footer>
+  
+  <!-- footer -->
+  <footer class="footer">
+    <!-- <div class="inner footer"> -->
+      <div class="inner">
+      <!-- <div class="footer__content"> -->
+        <div class="footer__copyright">&copy; 2018 Copyright, All Rights Reserved by AppSon</div>
+
+        <nav class="footer__content">
+          <ul class="footer__menu">
+            <li class="footer__item"><a href="#" class="footer__link">Terms &amp; Condition</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Privacy Policy</a></li>
+            <li class="footer__item"><a href="#" class="footer__link">Help</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__social">
+          <a href="https://www.facebook.com/" target="_blank" class="fb">
+            <img src="img/footer/fb.svg" alt="fb">
+          </a>
+          <a href="https://twitter.com/" target="_blank" class="tw">
+            <img src="img/footer/twitter.svg" alt="tw">
+          </a>
+          <a href="https://www.youtube.com/" target="_blank" class="yt">
+            <img src="img/footer/yt.svg" alt="yt">
+          </a>
+        </div>
+
+        <!-- do this like in materialize -->
+        <div class="footer__scroll-up">
+          <a href="#"><img src="img/footer/Icon.jpg" alt=""></a>
+        </div>
+      <!-- </div> -->
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
