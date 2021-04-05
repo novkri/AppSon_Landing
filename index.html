@@ -108,7 +108,7 @@
             <!-- <img src="img/about/Clip1.png" alt="" class="back-pic"><img src="img/about/Clip2.png" alt="" class="front-pic"> -->
           </div>
           <div class="about-card__body">
-            <div class="about-card__title">Easy Messaging</div>
+            <h3 class="about-card__title">Easy Messaging</h3>
             <div class="about-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
               adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -125,7 +125,7 @@
             <!-- <img src="img/about/Clip3.png" alt="" class="back-pic"><img src="img/about/Clip4.png" alt="" class="front-pic"> -->
           </div>
           <div class="about-card__body">
-            <div class="about-card__title">Keep In Touch</div>
+            <h3 class="about-card__title">Keep In Touch</h3>
             <div class="about-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur
               adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -141,7 +141,7 @@
     <section class="section-how">
       <!--  <div class="section-inner how"> ??? bg dots! -->
       <div class="section-inner">
-        <div class="section-how__title">How Does It Works?</div>
+        <h3 class="section-how__title">How Does It Works?</h3>
         <div class="section-how__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
         </div>
@@ -170,10 +170,127 @@
       </div>
     </section>
 
-    
+
     <!-- pricing page section -->
+    <section class="section-pricing" id="pricing">
+      <div class="section-inner">
+        <div class="choose-plan">
+          <h4 class="choose-plan__title">Pricing Plan</h4>
+          <p class="choose-plan__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+          <div class="switcher">
+            <input type="radio" name="period" id="monthly" checked>
+            <label for="monthly">Monthly</label>
+            <input type="radio" name="period" id="yearly">
+            <label for="yearly">Yearly</label>
+          </div>
+        </div>
+
+        <!-- container div for card ? -->
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <div class="pricing-card__image"><img src="./img/pricing/Standard.png" alt="Standard"></div>
+            <div class="pricing-card__name">Standard</div>
+          </div>
+
+          <div class="pricing-card__body">
+            <div class="pricing-card__service">
+              <p>2gb Hosting</p>
+              <p>10 Custom Domain</p>
+              <p>SSD Hosting</p>
+              <p>50 gb Bandwith</p>
+              <p>Free Support</p>
+            </div>
+          </div>
+
+          <div class="pricing-card__footer">
+            <div class="pricing-card__price">&#36;19.00</div>
+            <div class="btn btn--filled">
+              <a href="#" class="">Try Now</a>
+          </div>
+          </div>    
+        </div>
+
+        <div class="pricing-card">
+          <div class="pricing-card__header">
+            <div class="pricing-card__image"><img src="./img/pricing/Premium.png" alt="Premium"></div>
+            <div class="pricing-card__name">Premium</div>
+          </div>
+
+          <div class="pricing-card__body">
+            <div class="pricing-card__service">
+              <p>2gb Hosting</p>
+              <p>10 Custom Domain</p>
+              <p>SSD Hosting</p>
+              <p>50 gb Bandwith</p>
+              <p>Free Support</p>
+            </div>
+          </div>
+
+          <div class="pricing-card__footer">
+            <div class="pricing-card__price">&#36;49.00</div>
+            <div class="btn btn--bordered">
+              <a href="#" class="">Try Now</a>
+          </div>
+          </div>    
+        </div>
+      </div>
+    </section>
+
+
     <!-- slider section -->
+    <section class="section-slider">
+      <!-- bootstrap slider -->
+    </section>
+
+
     <!-- lates news page section -->
+    <section class="section-latest">
+      <div class="section-inner">
+        <!-- контейнер -->
+        <div class="news">
+          <div class="news__header">
+            <h4 class="news__title">Latest News From Us</h4>
+            <p class="news__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
+            </p>
+          </div>
+          
+          <div class="news__body">
+            <!-- последняя новость (article tag) -->
+            <div class="news-main">
+              <div class="news-main__image">
+                <img src="img/latest/main.jpg" alt="">
+              </div>
+              <!-- h5??? -->
+              <h5 class="news-main__title">The master bedroom suite is phenomenally spacious</h5>
+              <p class="news-main__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris.
+              </p>
+              <a href="#" class="section-latest__main-page-read-more">Continue Reading &rarr;</a>
+            </div>
+
+            <!-- остальные новости (article tag) -->
+            <div class="news-others">
+              <article class="news-others__card">
+                <div class="news-others__image">
+                  <img src="img/latest/1.jpg" alt="">
+                </div>
+                <div class="news-others__body">
+                  <h6 class="news-others__title"></h6>
+                  <p class="news-others__text"></p>
+                </div>
+              </article>
+              
+              <!-- ..... -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- free trial section -->
     <!-- sunscribe section -->
   </main>
