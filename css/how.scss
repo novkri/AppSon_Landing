@@ -1,0 +1,104 @@
+.how {
+  min-height: 635px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-light;
+  text-align: center;
+
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.how__title {
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 40px;
+  color: #000000;
+  padding-bottom: 25px;
+}
+
+.how__text {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000000;
+  padding-bottom: 45px;
+  max-width: 722px;
+}
+
+.instruction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 221px;
+}
+
+.instruction-card {
+  width: 333px;
+  height: 221px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 15px;
+  background-color: transparent;
+  margin-bottom: 5rem;
+}
+
+.instruction-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+  background-color: #DFEDFF;
+}
+
+.icon-account { background-image: url("../img/how/Icon1.svg");}
+.icon-email { background-image: url("../img/how/Icon2.svg");}
+.icon-results { background-image: url("../img/how/Icon3.svg");}
+
+.instruction-title {
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  line-height: 22px;
+  color: #000000;
+}
+
+.instruction-text {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000000;
+}
+
+
+
+// планшет
+@media(min-width: 600px) {
+  .how__title {
+    font-size: 32px;
+  }
+}
+
+
+
+// Large
+@media (min-width: 801px) {
+  .how {
+    // ????
+    padding-top: 5rem;
+  }
+  
+  .instruction {
+    flex-direction: row;
+    height: 221px;
+  }
+  
+  .instruction-card {
+    margin: 0 29px;
+  }
+}

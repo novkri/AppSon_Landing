@@ -1,5 +1,5 @@
 .about {
-  padding: 2rem;
+  padding: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +16,7 @@
   grid-row-gap: 3rem;
 }
 
-.about-card {
-}
+
 
 .about-card__image {
   display: none;
@@ -68,8 +67,7 @@
     grid-row-gap: 3rem;
   }
   
-  .about-card {
-  }
+  
   
   
   .about-card__body {
@@ -123,8 +121,7 @@
   .inner--about {
   }
   
-  .about-card {
-  }
+  
   
   .about-card__image {
     // padding: 0 2rem;
