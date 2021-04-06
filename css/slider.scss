@@ -1,0 +1,151 @@
+.slider {
+  background-color: $bg-light;
+  // max-height: 600px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slider__image {
+  // display: none;
+
+  // temp
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+
+  // ?
+  margin-left: -20%;
+}
+
+.slider__carousel {}
+
+
+
+
+.carousel__header {
+  font-weight: bold;
+  // ///
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+  padding-bottom: 40px;
+}
+
+.testimonials__row {
+  display: flex;
+  flex-direction: row;
+  
+  // ?
+  // padding: 40px 0;
+}
+
+.testimonial__card {
+  // filter: drop-shadow(0px 4px 20px rgba(0, 70, 156, 0.08));
+  box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
+
+  width: 362px;
+  height: 215px;
+  background-color: #fff;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 30px;
+  border-radius: 5px;
+}
+
+.testimonial__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+}
+
+.testimonial__person {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial__person-name {
+  font-weight: 500;
+  // //
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  // ?
+  padding-bottom: 10px;
+}
+
+.testimonial__person-role {
+  font-weight: normal;
+  // //
+  font-size: 14px;
+  line-height: 17px;
+  color: #999999;
+}
+
+.testimonial-icon {}
+
+.tw-icon {}
+
+.testimonial__body {
+  padding-top: 15px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #999999;
+  text-align: left;
+}
+
+
+
+
+.carousel.slide {
+  width: 900px;
+  overflow: hidden;
+}
+.carousel-inner {
+  position: relative;
+  // ? or mr -30%
+  width: 130%;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.carousel-indicators {
+  margin: 20px 10px;
+  justify-content: flex-start;
+
+  li {
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background: #F5FCFD;
+    border: 1.6px solid $primary-dark-color;
+    border-radius: 32px;
+  }
+
+  li.active {
+    width: 38px;
+    height: 12px;
+    background: $primary-dark-color;
+    border-radius: 32px;
+  }
+}
+
+
+
+// планшет
+@media(min-width: 600px) {}
+
+
+// Large
+@media (min-width: 801px) {}
