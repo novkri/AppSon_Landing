@@ -8,10 +8,15 @@ main {
   line-height: 18px;
 }
 
+.inner {
+  max-width: 1644px;
+  width: 100%;
+}
+
 .btn {
-  border-radius: 20px;
+  border-radius: 25px;
+  width: 165px;
   padding: 10px 0;
-  width: 125px;
 }
 
 .btn a {
@@ -35,7 +40,7 @@ main {
 
 .btn--signup {
   background-color: #0063DD;
-  margin-right: 2rem;
+  margin-top: 2rem;
 }
 
 .navbar {
@@ -47,13 +52,13 @@ main {
   height: 60px;
 }
 
-.navbar {
+.navbar.navbar-light {
   background-color: transparent;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 30px;
   background-color: #0F7BFF;
   color: #fff;
@@ -73,7 +78,7 @@ main {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #fff;
+  background-color: transparent;
   z-index: 10;
   padding: 2rem;
   width: 100%;
@@ -81,19 +86,24 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .nav__list {
   width: 100%;
   text-align: center;
+  padding: 0 1.5rem;
 }
 
 .nav__item {
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
   border-bottom: 2px solid #cdcccc;
   cursor: pointer;
 }
@@ -122,6 +132,10 @@ main {
 .navbar-light .navbar-toggler {
   border: none;
   outline: none;
+  width: 50px;
+  height: 50px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .header {
@@ -131,19 +145,19 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100vh;
   text-align: center;
   position: relative;
+  background-color: #f7fbfe;
   background-image: url("../img/header/header-bg.jpg");
   background-position: center top;
   background-repeat: no-repeat;
 }
 
 .offer {
-  padding: 20px;
+  max-width: 655px;
+  margin: auto;
+  margin-top: 5.5rem;
 }
 
 .offer .btn {
@@ -158,6 +172,26 @@ main {
   padding-bottom: 33px;
   line-height: 27px;
   color: #929292;
+}
+
+.offer__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer__buttons .btn {
+  margin-bottom: 1.3rem;
 }
 
 .scroll-down {
@@ -177,13 +211,120 @@ main {
   box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
 }
 
-.scroll-down__btn {
+.scroll-down:hover .scroll-down__btn, .scroll-down:active .scroll-down__btn, .scroll-down:focus .scroll-down__btn {
   color: #fff;
+}
+
+.scroll-down__btn {
   height: 100%;
+  color: #fff;
 }
 
 .scroll-down__btn svg {
   height: 50px;
   width: 50px;
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .btn {
+    width: 165px;
+    padding: 13px 0;
+  }
+  .navbar {
+    height: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 0 0 15px 15px;
+  }
+  .navbar__menu {
+    margin-right: 1rem;
+  }
+  .nav {
+    padding: 2rem 4rem;
+  }
+  .nav__list {
+    padding: 0 2rem;
+  }
+  .offer__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+  }
+  .scroll-down {
+    bottom: -35px;
+    left: 45%;
+    width: 70px;
+    height: 70px;
+  }
+  .scroll-down .scroll-down__btn {
+    height: 100%;
+    color: #fff;
+  }
+  .scroll-down .scroll-down__btn svg {
+    height: 43px;
+    width: 43px;
+  }
+}
+
+@media (min-width: 801px) {
+  .btn--signup {
+    margin: 0;
+  }
+  .navbar {
+    height: 100px;
+  }
+  .logo {
+    font-size: 2rem;
+    line-height: 45px;
+    border-radius: 0 0 20px 20px;
+    padding: 25px 23px 32px 23px;
+  }
+  .navbar__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+    margin: 0;
+  }
+  .nav {
+    position: relative;
+    padding: 0;
+    height: auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    top: auto;
+    right: auto;
+  }
+  .nav__list {
+    padding: 0;
+    width: auto;
+  }
+  .nav__item {
+    border: none;
+    margin: 0 20px;
+  }
+  .btn--signup {
+    margin-left: 32px;
+  }
+  .header {
+    background-size: cover;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
