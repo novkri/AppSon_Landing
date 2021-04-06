@@ -1,4 +1,20 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+main {
+  margin-bottom: 100px;
+}
+
+:root {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@media (min-width: 600px) {
+  :root {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .inner {
   max-width: 1644px;
   width: 100%;
@@ -139,7 +155,7 @@
   height: 100vh;
   text-align: center;
   position: relative;
-  background-color: #F5FCFD;
+  background-color: #f7fbfe;
   background-image: url("../img/header/header-bg.jpg");
   background-position: center top;
   background-repeat: no-repeat;
@@ -314,163 +330,4 @@
     background-size: cover;
   }
 }
-
-.features {
-  min-height: 635px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #F5FCFD;
-}
-
-.features-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 2rem 0;
-  min-height: 336px;
-  margin-top: 3.5rem;
-}
-
-.features-card {
-  width: 290px;
-  min-height: 290px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 40px 15px 47px 15px;
-  text-align: center;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
-          box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
-  border-radius: 5px;
-  margin-bottom: 2rem;
-}
-
-.icon-analysis {
-  background-color: #DFEDFF;
-  background-image: url("../img/features/Icon 1.svg");
-}
-
-.icon-design {
-  background-color: #F5DFFF;
-  background-image: url("../img/features/Icon.svg");
-}
-
-.icon-messaging {
-  background-color: #DFFFE3;
-  background-image: url("../img/features/Icon 3.svg");
-}
-
-.features-card__icon {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  background-position: center center;
-  background-repeat: no-repeat;
-  margin-bottom: 23px;
-}
-
-.features-card__title {
-  padding-bottom: 25px;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 22px;
-  color: #000000;
-}
-
-.features-card__text {
-  font-weight: 300;
-  font-size: 1rem;
-  color: #000000;
-}
-
-@media (min-width: 600px) {
-  .features-container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .features-card {
-    margin-right: 2rem;
-    margin-left: 2rem;
-  }
-}
-
-@media (min-width: 801px) {
-  .features-container {
-    height: 336px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-top: 0;
-    padding: 0 5rem;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  .features-card {
-    height: 290px;
-    width: 362px;
-    margin: 0;
-  }
-  .features-card:nth-child(2) {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-  }
-  .features-card__title {
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1644px) {
-  .features-container {
-    padding: 0;
-  }
-}
-
-:root {
-  font-size: 14px;
-  line-height: 18px;
-}
-
-@media (min-width: 600px) {
-  :root {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=heading.css.map */
