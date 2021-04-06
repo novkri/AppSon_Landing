@@ -128,101 +128,95 @@
 
     <!-- how page section -->
     <section class="how">
-      <!--  <div class="inner how"> ??? bg dots! -->
-      <!-- <div class="how__container"> -->
-        <h3 class="how__title">How Does It Works?</h3>
-        <div class="how__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
-        </div>
+      <h3 class="how__title">How Does It Works?</h3>
+      <div class="how__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.
+      </div>
 
-        <!-- here ??? bg dots! -->
-        <div class="instruction">
-          <div class="instruction-card">
-            <div class="instruction-icon icon-account"></div>
-            <div class="instruction-title">Create An Account</div>
-            <div class="instruction-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod.</div>
-          </div>
-          <div class="instruction-card">
-            <div class="instruction-icon icon-email"></div>
-            <div class="instruction-title">Confirm Email</div>
-            <div class="instruction-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod.</div>
-          </div>
-          <div class="instruction-card">
-            <div class="instruction-icon icon-results"></div>
-            <div class="instruction-title">See Results</div>
-            <div class="instruction-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod.</div>
-          </div>
+      <!-- bg dots! -->
+      <div class="instruction">
+        <div class="instruction-card">
+          <div class="instruction-icon icon-account"></div>
+          <div class="instruction-title">Create An Account</div>
+          <div class="instruction-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod.</div>
         </div>
-      <!-- </div> -->
+        <div class="instruction-card">
+          <div class="instruction-icon icon-email"></div>
+          <div class="instruction-title">Confirm Email</div>
+          <div class="instruction-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod.</div>
+        </div>
+        <div class="instruction-card">
+          <div class="instruction-icon icon-results"></div>
+          <div class="instruction-title">See Results</div>
+          <div class="instruction-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod.</div>
+        </div>
+      </div>
     </section>
 
 
     <!-- pricing page section -->
     <section class="pricing" id="pricing">
-      <div class="inner">
+      <div class="inner inner--pricing">
         <div class="choose-plan">
           <h4 class="choose-plan__title">Pricing Plan</h4>
           <p class="choose-plan__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet.</p>
+
+            <!-- исопльзовать компнент бутстрапа! -->
           <div class="switcher">
             <input type="radio" name="period" id="monthly" checked>
-            <label for="monthly">Monthly</label>
+            <label for="monthly" class="">Monthly</label>
             <input type="radio" name="period" id="yearly">
-            <label for="yearly">Yearly</label>
+            <label for="yearly" class="">Yearly</label>
           </div>
         </div>
 
         <!-- container div for card ? -->
-        <div class="pricing-card">
-          <div class="pricing-card__header">
-            <div class="pricing-card__image"><img src="./img/pricing/Standard.png" alt="Standard"></div>
-            <div class="pricing-card__name">Standard</div>
-          </div>
-
-          <div class="pricing-card__body">
-            <div class="pricing-card__service">
+        <div class="pricing__variants">
+          <div class="pricing-card">
+            <div class="pricing-card__header">
+              <div class="pricing-card__image icon-standart"></div>
+              <div class="pricing-card__name">Standard</div>
+            </div>
+  
+            <div class="pricing-card__body">
               <p>2gb Hosting</p>
               <p>10 Custom Domain</p>
               <p>SSD Hosting</p>
               <p>50 gb Bandwith</p>
               <p>Free Support</p>
             </div>
-          </div>
-
-          <div class="pricing-card__footer">
+  
             <div class="pricing-card__price">&#36;19.00</div>
             <div class="btn btn--filled">
               <a href="#" class="">Try Now</a>
+            </div>
           </div>
-          </div>    
-        </div>
-
-        <div class="pricing-card">
-          <div class="pricing-card__header">
-            <div class="pricing-card__image"><img src="./img/pricing/Premium.png" alt="Premium"></div>
-            <div class="pricing-card__name">Premium</div>
-          </div>
-
-          <div class="pricing-card__body">
-            <div class="pricing-card__service">
+  
+          <div class="pricing-card">
+            <div class="pricing-card__header">
+              <div class="pricing-card__image icon-premium"></div>
+              <div class="pricing-card__name">Premium</div>
+            </div>
+  
+            <div class="pricing-card__body">
               <p>2gb Hosting</p>
               <p>10 Custom Domain</p>
               <p>SSD Hosting</p>
               <p>50 gb Bandwith</p>
               <p>Free Support</p>
             </div>
-          </div>
-
-          <div class="pricing-card__footer">
+  
             <div class="pricing-card__price">&#36;49.00</div>
             <div class="btn btn--bordered">
               <a href="#" class="">Try Now</a>
+            </div>
           </div>
-          </div>    
         </div>
+
       </div>
     </section>
 
