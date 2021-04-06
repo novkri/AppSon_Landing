@@ -1,45 +1,23 @@
-.inner {
-  max-width: 1644px;
-  // ?
+
+.header {
+  display: flex;
+  // justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  // ???
+  height: 100vh;
+
+  text-align: center;
+  position: relative;
+  background-color: $bg-light;
+  background-image: url('../img/header/header-bg.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+
   width: 100%;
 }
 
-.btn {
-  border-radius: 25px;
 
-  // height: 50px;
-  width: 165px;
-
-  padding: 10px 0;
-
-  a {
-    color: #fff;
-    font-weight: bold;
-  }
-}
-
-
-.btn--filled {
-  background-color: $primary-color;
-  border: 2px solid $primary-color;
-}
-
-.btn--bordered {
-  background-color: #fff;
-  border: 2px solid $primary-color;
-
-  a {
-    color: $primary-color;
-  }
-}
-
-.btn--signup {
-  background-color: $primary-dark-color;
-  margin-top: 2rem;
-}
-
-
-// мобила
 .navbar {
   position: relative;
   justify-content: space-between;
@@ -90,8 +68,6 @@
 }
 
 .nav__item {
-  // margin-bottom: 1rem;
-  // padding: 0.5rem;
   padding: 1rem;
   margin-bottom: 0.5rem;
   border-bottom: 2px solid #cdcccc;
@@ -120,7 +96,6 @@
   }
 }
 
-// burger btn
 .navbar-light .navbar-toggler {
   border: none;
   outline: none;
@@ -129,22 +104,6 @@
   align-self: flex-end;
 }
 
-
-
-// 1 section
-.header {
-  display: flex;
-  justify-content: center;
-  // ???
-  height: 100vh;
-
-  text-align: center;
-  position: relative;
-  background-color: $bg-light;
-  background-image: url('../img/header/header-bg.jpg');
-  background-position: center top;
-  background-repeat: no-repeat;
-}
 
 .offer {
   max-width: 655px;
@@ -347,3 +306,8 @@
 
 // Extra large
 // ≥1200px
+@media (min-width: 1645px) {
+  .navbar {
+    width: 1644px;
+  }
+}

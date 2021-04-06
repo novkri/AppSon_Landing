@@ -14,6 +14,7 @@
   padding: 2rem 0;
   min-height: 336px;
   margin-top: 3.5rem;
+  max-width: 1146px;
 }
 
 .features-card {
@@ -28,7 +29,6 @@
   background-color: #fff;
   box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
   border-radius: 5px;
-
   margin-bottom: 2rem;
 }
 
@@ -57,8 +57,6 @@
 .features-card__title {
   padding-bottom: 25px;
   font-weight: 500;
-  // later
-  // font-size: 18px;
   font-size: 1.2rem;
   line-height: 22px;
   color: #000000;
@@ -66,8 +64,6 @@
 
 .features-card__text {
   font-weight: 300;
-  // later
-  // font-size: 16px;
   font-size: 1rem;
   color: #000000;
 }
@@ -95,9 +91,10 @@
     height: 336px;
     flex-direction: row;
     margin-top: 0;
-    padding: 0 5rem;
+    width: 1146px;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0;
   }
   
   .features-card {
@@ -112,11 +109,5 @@
   
   .features-card__title {
     font-size: 18px;
-  }
-}
-
-@media (min-width: 1644px) {
-  .features-container {
-    padding: 0;
   }
 }

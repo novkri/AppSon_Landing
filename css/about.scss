@@ -1,0 +1,143 @@
+.about {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.inner--about {
+  height: 100%;
+  display: grid;  
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+
+  grid-column-gap: 5rem;
+  grid-row-gap: 3rem;
+}
+
+.about-card {
+}
+
+.about-card__image {
+  display: none;
+}
+// оставить ромбики
+
+.about-card__body {
+  max-width: 476px;
+  align-self: center;
+}
+
+.about-card__title {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 40px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+
+.about-card__text {
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000000;
+  padding-bottom: 35px;
+}
+
+.about-card__link {}
+
+
+
+// планшет
+@media(min-width: 600px) {
+  .about {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .inner--about {
+    height: 100%;
+    display: grid;  
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  
+    grid-column-gap: 5rem;
+    grid-row-gap: 3rem;
+  }
+  
+  .about-card {
+  }
+  
+  
+  .about-card__body {
+    max-width: 476px;
+    align-self: center;
+  }
+  
+  .about-card__title {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 40px;
+    color: #000000;
+    padding-bottom: 30px;
+  }
+  
+  .about-card__text {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #000000;
+    padding-bottom: 35px;
+  }
+
+  
+  
+  .about-card__image {
+    display: block;
+
+    // padding-bottom: 3rem;
+
+    width: 300px;
+    height: 300px;
+    overflow: clip;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    border-radius: 25px;
+    // padding: 0 1rem;
+  }
+
+  .about-card__body {
+  }
+}
+
+
+
+// Large
+@media (min-width: 801px) {
+  .about {
+  }
+
+  .inner--about {
+  }
+  
+  .about-card {
+  }
+  
+  .about-card__image {
+    // padding: 0 2rem;
+
+    width: auto;
+    height: auto;
+    border-radius: 25px;
+  }
+  .about-card__body {
+    // padding: 0 2rem;
+  }
+  
+  .about-card__title {
+    font-size: 32px;
+  }
+}
