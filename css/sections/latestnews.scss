@@ -139,6 +139,7 @@
   font-weight: 300;
   // ////
   font-size: 1rem;
+  line-height: 24px;
   color: #000000;
 }
 
@@ -154,7 +155,7 @@
 
   .news-main__image {
     width: 100%;
-    overflow: auto;
+    overflow: inherit;
   }
 }
 
@@ -168,7 +169,8 @@
   
   .news-main {
     padding: 0;
-    padding-right: 30px;
+    margin-right: 20px;
+    padding-right: 10px;
     width: 558px;
     justify-content: flex-start;
   }

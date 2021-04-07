@@ -1,11 +1,12 @@
 @import "_const.scss";
-@import "heading.scss";
-@import "features.scss";
-@import "about.scss";
-@import "how.scss";
-@import "pricing.scss";
-@import "slider.scss";
-@import "latestnews.scss";
+@import "./sections/heading.scss";
+@import "./sections/features.scss";
+@import "./sections/about.scss";
+@import "./sections/how.scss";
+@import "./sections/pricing.scss";
+@import "./sections/slider.scss";
+@import "./sections/latestnews.scss";
+@import "./sections/footer.scss";
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
 
 
@@ -26,7 +27,9 @@ label {
 }
 
 .inner {
-  max-width: 1345px;
+  // ???
+  // max-width: 1345px;
+  max-width: 1146px;
   // ?
   width: 100%;
   // ?
