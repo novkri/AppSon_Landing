@@ -4,7 +4,7 @@
   height: 600px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -111,7 +111,8 @@
 
 
 .carousel.slide {
-  width: 900px;
+  // width: 900px;
+  width: 80%;
   overflow: hidden;
 }
 .carousel-inner {
@@ -148,47 +149,31 @@
 
 // показывать след
 .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
     display: block;
 }
 
-.carousel-inner .active {
-  // later
-  // width: 80%;
-
-  // width: auto;
-}
-
 .carousel-inner .active + .carousel-item {
-  // later
-  // margin-left: 45%;
-
-  margin-left: 100%;
+  margin-left: 392px;
   width: auto;
 }
 
-.carousel-inner .active + .carousel-item + .carousel-item{
-  // later
-  // margin-left: 90%;
-
-  margin-left: 100%;
-  width: auto;
-}
+// .carousel-inner .active + .carousel-item + .carousel-item{
+//   margin-left: 100%;
+//   width: auto;
+// }
 
 
 
 // планшет
 @media(min-width: 600px) {
 
-
   .carousel-inner .active {
     width: auto;
   }
 
   .carousel-inner .active + .carousel-item {
-    margin-left: 50%;
-
+    margin-left: 392px;
   }
   
   .carousel-inner .active + .carousel-item + .carousel-item{
@@ -200,16 +185,53 @@
 
 // Large
 @media (min-width: 801px) {
+
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    display: block;
+  }
+
+  
   .carousel.slide {
-    width: 1000px;
+    // width: 90%;
+    width: 100%;
   }
 
   .carousel-inner .active + .carousel-item {
-    margin-left: 40%;
+    margin-left: 392px;
 
   }
   
   .carousel-inner .active + .carousel-item + .carousel-item{
-    margin-left: 80%;
+    margin-left: 784px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    justify-content: space-between;
+  }
+  .slider__image {
+    // width: 600px;
+    // width: 40%;
+    display: flex;
+    // justify-content: center;
+    // align-content: center;
+    // overflow: hidden;
+  
+    // ?
+    // margin-left: -20%;
+    background-image: url("../img/testimonials/Image.png");
+    height: 100%;
+    // background-position: right center;
+    // background-size: contain;
+    background-repeat: no-repeat;
+
+    // ? как то
+    width: 60%;
+    margin-right: 5%;
+    background-position: right center;
+    background-size: cover;
   }
 }

@@ -731,7 +731,7 @@
   height: 600px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
@@ -806,7 +806,7 @@
 }
 
 .carousel.slide {
-  width: 900px;
+  width: 80%;
   overflow: hidden;
 }
 
@@ -837,18 +837,12 @@
 }
 
 .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
   display: block;
 }
 
 .carousel-inner .active + .carousel-item {
-  margin-left: 100%;
-  width: auto;
-}
-
-.carousel-inner .active + .carousel-item + .carousel-item {
-  margin-left: 100%;
+  margin-left: 392px;
   width: auto;
 }
 
@@ -857,7 +851,7 @@
     width: auto;
   }
   .carousel-inner .active + .carousel-item {
-    margin-left: 50%;
+    margin-left: 392px;
   }
   .carousel-inner .active + .carousel-item + .carousel-item {
     margin-left: 100%;
@@ -865,14 +859,35 @@
 }
 
 @media (min-width: 801px) {
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    display: block;
+  }
   .carousel.slide {
-    width: 1000px;
+    width: 100%;
   }
   .carousel-inner .active + .carousel-item {
-    margin-left: 40%;
+    margin-left: 392px;
   }
   .carousel-inner .active + .carousel-item + .carousel-item {
-    margin-left: 80%;
+    margin-left: 784px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    justify-content: space-between;
+  }
+  .slider__image {
+    display: flex;
+    background-image: url("../img/testimonials/Image.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 60%;
+    margin-right: 5%;
+    background-position: right center;
+    background-size: cover;
   }
 }
 
