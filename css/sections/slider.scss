@@ -9,17 +9,18 @@
 }
 
 .slider__image {
-  // display: none;
-
   // temp
-  width: 600px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  overflow: hidden;
+  display: none;
 
-  // ?
-  margin-left: -20%;
+  // // temp
+  // width: 600px;
+  // display: flex;
+  // justify-content: center;
+  // align-content: center;
+  // overflow: hidden;
+
+  // // ?
+  // margin-left: -20%;
 }
 
 .slider__carousel {}
@@ -28,6 +29,10 @@
 
 
 .carousel__header {
+  // temp
+  text-align: center;
+
+
   font-weight: bold;
   // ///
   font-size: 32px;
@@ -39,9 +44,6 @@
 .testimonials__row {
   display: flex;
   flex-direction: row;
-  
-  // ?
-  // padding: 40px 0;
 }
 
 .testimonial__card {
@@ -143,27 +145,71 @@
 
 
 
-// в мобилке стили поправить !
 
 // показывать след
 .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
     display: block;
 }
 
 .carousel-inner .active {
-  width: 80%;
+  // later
+  // width: 80%;
+
+  // width: auto;
 }
 
 .carousel-inner .active + .carousel-item {
-  margin-left: 80%;
+  // later
+  // margin-left: 45%;
+
+  margin-left: 100%;
+  width: auto;
+}
+
+.carousel-inner .active + .carousel-item + .carousel-item{
+  // later
+  // margin-left: 90%;
+
+  margin-left: 100%;
+  width: auto;
 }
 
 
 
 // планшет
-@media(min-width: 600px) {}
+@media(min-width: 600px) {
+
+
+  .carousel-inner .active {
+    width: auto;
+  }
+
+  .carousel-inner .active + .carousel-item {
+    margin-left: 50%;
+
+  }
+  
+  .carousel-inner .active + .carousel-item + .carousel-item{
+    margin-left: 100%;
+  }
+
+}
 
 
 // Large
-@media (min-width: 801px) {}
+@media (min-width: 801px) {
+  .carousel.slide {
+    width: 1000px;
+  }
+
+  .carousel-inner .active + .carousel-item {
+    margin-left: 40%;
+
+  }
+  
+  .carousel-inner .active + .carousel-item + .carousel-item{
+    margin-left: 80%;
+  }
+}
