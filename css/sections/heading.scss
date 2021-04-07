@@ -21,8 +21,9 @@
 .navbar {
   position: relative;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 0 2rem;
   height: 60px;
+  width: 100%;
 }
 
 .navbar.navbar-light {
@@ -146,15 +147,15 @@
   padding: 13px;
   border-radius: 50%;
   background-color: $primary-dark-color;
-  // -webkit-box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
-  // -moz-box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
-  // box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
+  -webkit-box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
+  -moz-box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
+  box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
   translate: .3ms all ease;
 
   &:hover, &:active, &:focus {
-    -webkit-box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
-    -moz-box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
-    box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
+    // -webkit-box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
+    // -moz-box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
+    // box-shadow: 0px 0px 0px 22px rgba(0, 99, 221, 0.23);
 
     .scroll-down__btn {
       color: #fff;
@@ -309,5 +310,6 @@
 @media (min-width: 1645px) {
   .navbar {
     width: 1644px;
+    padding: 0;
   }
 }

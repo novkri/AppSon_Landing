@@ -1,6 +1,5 @@
 .slider {
   background-color: $bg-light;
-  // max-height: 600px;
   height: 600px;
   display: flex;
   flex-direction: row;
@@ -9,18 +8,7 @@
 }
 
 .slider__image {
-  // temp
   display: none;
-
-  // // temp
-  // width: 600px;
-  // display: flex;
-  // justify-content: center;
-  // align-content: center;
-  // overflow: hidden;
-
-  // // ?
-  // margin-left: -20%;
 }
 
 .slider__carousel {}
@@ -29,10 +17,7 @@
 
 
 .carousel__header {
-  // temp
   text-align: center;
-
-
   font-weight: bold;
   // ///
   font-size: 32px;
@@ -96,7 +81,16 @@
 
 .testimonial-icon {}
 
-.tw-icon {}
+.tw-icon {
+  align-self: baseline;
+  padding-top: 2px;
+
+  .bi-twitter {
+    width: 20px;
+    height: 20px;
+    color: $primary-color;
+  }
+}
 
 .testimonial__body {
   padding-top: 15px;
@@ -111,15 +105,11 @@
 
 
 .carousel.slide {
-  // width: 900px;
   width: 80%;
   overflow: hidden;
 }
 .carousel-inner {
   position: relative;
-  // ? or mr -30%
-  // width: 130%;
-  // overflow: hidden;
   padding-bottom: 60px;
 }
 
@@ -145,8 +135,6 @@
 }
 
 
-
-
 // показывать след
 .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
 .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
@@ -157,11 +145,6 @@
   margin-left: 392px;
   width: auto;
 }
-
-// .carousel-inner .active + .carousel-item + .carousel-item{
-//   margin-left: 100%;
-//   width: auto;
-// }
 
 
 
@@ -179,6 +162,12 @@
   .carousel-inner .active + .carousel-item + .carousel-item{
     margin-left: 100%;
   }
+  .tw-icon {
+    .bi-twitter {
+      width: 30px;
+      height: 30px;
+    }
+  }
 
 }
 
@@ -194,7 +183,6 @@
 
   
   .carousel.slide {
-    // width: 90%;
     width: 100%;
   }
 
@@ -212,20 +200,11 @@
   .slider {
     justify-content: space-between;
   }
+
   .slider__image {
-    // width: 600px;
-    // width: 40%;
     display: flex;
-    // justify-content: center;
-    // align-content: center;
-    // overflow: hidden;
-  
-    // ?
-    // margin-left: -20%;
     background-image: url("../img/testimonials/Image.png");
     height: 100%;
-    // background-position: right center;
-    // background-size: contain;
     background-repeat: no-repeat;
 
     // ? как то
