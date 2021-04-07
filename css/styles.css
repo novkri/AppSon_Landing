@@ -816,8 +816,6 @@
 
 .carousel-inner {
   position: relative;
-  width: 130%;
-  overflow: hidden;
   padding-bottom: 60px;
 }
 
@@ -840,6 +838,19 @@
   height: 12px;
   background: #0063DD;
   border-radius: 32px;
+}
+
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+  display: block;
+}
+
+.carousel-inner .active {
+  width: 80%;
+}
+
+.carousel-inner .active + .carousel-item {
+  margin-left: 80%;
 }
 
 .pages {
@@ -1199,6 +1210,9 @@
   }
   .footer__scroll-up {
     position: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

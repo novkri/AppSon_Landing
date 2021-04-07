@@ -115,8 +115,8 @@
 .carousel-inner {
   position: relative;
   // ? or mr -30%
-  width: 130%;
-  overflow: hidden;
+  // width: 130%;
+  // overflow: hidden;
   padding-bottom: 60px;
 }
 
@@ -139,6 +139,24 @@
     background: $primary-dark-color;
     border-radius: 32px;
   }
+}
+
+
+
+// в мобилке стили поправить !
+
+// показывать след
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+    display: block;
+}
+
+.carousel-inner .active {
+  width: 80%;
+}
+
+.carousel-inner .active + .carousel-item {
+  margin-left: 80%;
 }
 
 
