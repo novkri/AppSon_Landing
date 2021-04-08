@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  // burger lock scroll
+  $('.navbar-toggler').click(function(event) {
+    $('body').toggleClass('lock-scroll');
+  });
+
     $('.owl-carousel').slick({
       infinite: true,
       slidesToShow: 3,

@@ -19,12 +19,8 @@ label {
 }
 
 .inner {
-  // ???
-  // max-width: 1345px;
   max-width: 1146px;
-  // ?
   width: 100%;
-  // ?
 }
 
 .btn {
@@ -65,16 +61,22 @@ label {
   color: $primary-dark-color;
 }
 
+.lock-scroll {
+  overflow: hidden;
+}
+
 
 // === heading ===
 
 .header {
   display: flex;
-  // justify-content: center;
   flex-direction: column;
   align-items: center;
   // ???
-  height: 100vh;
+  // height: 100vh;
+  // max-height: 1029px;
+  height: 1029px;
+
 
   text-align: center;
   position: relative;
@@ -95,7 +97,7 @@ label {
   width: 100%;
 }
 
-.navbar.navbar-light {
+.navbar.navbar-light, .navbar-expand-lg .navbar-collapse {
   background-color: transparent;
 }
 
@@ -120,7 +122,7 @@ label {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: transparent;
+  background-color: $bg-light;
   z-index: 10;
   padding: 2rem;
   width: 100%;
@@ -172,6 +174,13 @@ label {
   width: 50px;
   height: 50px;
   align-self: flex-end;
+}
+
+
+.inner--offer {
+  height: 100%;
+  position: relative;
+  background: none;
 }
 
 
@@ -253,6 +262,13 @@ label {
 
 // планшет
 @media(min-width: 600px) {
+  .inner--offer {
+    background-image: url("../img/Devices.png");
+    background-position: 50% 900%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  }
+
   .btn {
     width: 165px;
     padding: 13px 0;
@@ -273,22 +289,14 @@ label {
     margin-right: 1rem;
   }
   
-  // !!!!!
   .nav {
     padding: 2rem 4rem;
-    // display: flex;
   }
 
   .nav__list {
     padding: 0 2rem;
   }
 
-  // !!!!!
-  // burger btn
-  // .navbar-light .navbar-toggler {
-  //   display: none;
-  // }
-  
 
   .offer__buttons {
     flex-direction: row;
@@ -298,7 +306,7 @@ label {
 
   .scroll-down {
     bottom: -35px;
-    left: 45%;
+    left: 47%;
     width: 70px;
     height: 70px;
 
@@ -482,6 +490,7 @@ label {
     justify-content: space-between;
     align-items: flex-start;
     padding: 0;
+    flex-wrap: nowrap;
   }
   
   .features-card {
@@ -546,8 +555,6 @@ label {
   padding-bottom: 35px;
 }
 
-.about-card__link {}
-
 
 
 // планшет
@@ -595,44 +602,68 @@ label {
   
   .about-card__image {
     display: block;
-    justify-content: flex-start;
-
-    // padding-bottom: 3rem;
-
+    justify-content: center;
     width: 300px;
     height: 300px;
     overflow: clip;
     display: flex;
     align-items: baseline;
     border-radius: 25px;
-    // padding: 0 1rem;
-  }
-
-  .about-card__body {
   }
 }
 
 
 
 // Large
-@media (min-width: 801px) {
-  .about {
-  }
-  
-  .about-card__image {
-    // padding: 0 2rem;
+// @media (min-width: 801px) {
+// }
 
+@media (min-width: 1000px) {
+  .about-card__image {
+    justify-content: flex-start;
     width: auto;
     height: auto;
     border-radius: 25px;
+    z-index: 5;
   }
   .about-card__body {
-    // padding: 0 2rem;
+    z-index: 5;
   }
   
   .about-card__title {
     font-size: 32px;
   }
+
+
+  .inner--about {
+    position: relative;
+  }
+  .inner--about::after, .inner--about::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    height: 483px;
+    width: 390px;
+    border-radius: 40px;
+    transform: matrix(0.77, -0.64, -0.64, -0.77, 0, 0);
+  }
+
+  .inner--about::after {
+    top: -5%;
+    left: -0%;
+    background: linear-gradient(147.4deg, #0F7BFF 7.27%, #0063DD 93.68%);
+  }
+  .inner--about::before {
+    bottom: -11%;
+    right: 7%;
+
+    background: linear-gradient(272deg, #0F7BFF 4.58%, #0063DD 78.9%);
+  }
+
+  .inner--about {
+    z-index: 1;
+  }
+  
 }
 
 
@@ -672,6 +703,10 @@ label {
   justify-content: center;
   align-items: center;
   min-height: 221px;
+  position: relative;
+}
+.dots {
+  display: none;
 }
 
 .instruction-card {
@@ -695,9 +730,10 @@ label {
   background-repeat: no-repeat;
   margin-bottom: 30px;
   background-color: #DFEDFF;
+  z-index: 5;
 }
 
-.icon-account { background-image: url("../img/how_account .svg");}
+.icon-account { background-image: url("../img/how_account.svg");}
 .icon-email { background-image: url("../img/how_email.svg");}
 .icon-results { background-image: url("../img/how_results.svg");}
 
@@ -737,6 +773,14 @@ label {
     flex-direction: row;
     height: 221px;
   }
+  .dots {
+    display: block;
+    width: 60%;
+    border: 2px dashed #0F7BFF;
+    position: absolute;
+    top: 23%;
+    z-index: 0;
+  }  
   
   .instruction-card {
     margin: 0 29px;
@@ -828,7 +872,6 @@ label {
 }
 
 .pricing-card {
-  //   filter: drop-shadow(0px 4px 20px rgba(0, 78, 172, 0.08));
   box-shadow: 0px 4px 20px rgba(0, 78, 172, 0.08);
   border-radius: 5px;
   padding: 39px 30px 46px 30px;
@@ -960,16 +1003,11 @@ label {
   font-size: 32px;
   line-height: 40px;
   color: #000000;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
 }
 
-.testimonials__row {
-  display: flex;
-  flex-direction: row;
-}
 
 .testimonial__card {
-  // filter: drop-shadow(0px 4px 20px rgba(0, 70, 156, 0.08));
   box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
 
   width: 362px;
@@ -1040,134 +1078,18 @@ label {
 
 
 
-.carousel.slide {
-  width: 80%;
-  overflow: hidden;
-}
-.carousel-inner {
-  position: relative;
-  padding-bottom: 60px;
-}
-
-.carousel-indicators {
-  margin: 20px 10px;
-  justify-content: flex-start;
-
-  li {
-    opacity: 1;
-    height: 12px;
-    width: 12px;
-    background: #F5FCFD;
-    border: 1.6px solid $primary-dark-color;
-    border-radius: 32px;
-  }
-
-  li.active {
-    width: 38px;
-    height: 12px;
-    background: $primary-dark-color;
-    border-radius: 32px;
-  }
-}
-
-
-// показывать след
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
-    display: block;
-}
-
-.carousel-inner .active + .carousel-item {
-  margin-left: 392px;
-  width: auto;
-}
-
-
-
-// планшет
-@media(min-width: 600px) {
-
-  .carousel-inner .active {
-    width: auto;
-  }
-
-  .carousel-inner .active + .carousel-item {
-    margin-left: 392px;
-  }
-  
-  .carousel-inner .active + .carousel-item + .carousel-item{
-    margin-left: 100%;
-  }
-  .tw-icon {
-    .bi-twitter {
-      width: 30px;
-      height: 30px;
-    }
-  }
-
-}
-
-
-// Large
-@media (min-width: 801px) {
-
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
-  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
-    display: block;
-  }
-
-  
-  .carousel.slide {
-    width: 100%;
-  }
-
-  .carousel-inner .active + .carousel-item {
-    margin-left: 392px;
-
-  }
-  
-  .carousel-inner .active + .carousel-item + .carousel-item{
-    margin-left: 784px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .slider {
-    justify-content: space-between;
-  }
-
-  .slider__image {
-    display: flex;
-    background-image: url("../img/Testimonials_Image.png");
-    height: 100%;
-    background-repeat: no-repeat;
-
-    // ? как то
-    width: 60%;
-    margin-right: 5%;
-    background-position: right center;
-    background-size: cover;
-  }
-}
-
-
-
 
 // SLICK
-// !!!!
-.section-testimonials__container {
+.carousel__container {
   display: flex;
   flex-direction: column;
-  // width: 1000px;
-  width: 60%;
+  width: 80%;
 }
-.section-testimonials__container-slider {
+
+.carousel-wrapper {
   display: flex;
   flex-direction: row;
 }
-// slick
-
 
 .owl-carousel {
   display: flex;
@@ -1179,6 +1101,7 @@ label {
 }
 .slick-list {
   overflow: hidden;
+  padding: 15px 0;
 }
 
 .slick-track {
@@ -1192,7 +1115,7 @@ label {
 }
 
 .slick-dots {
-  margin-top: 37px;
+  margin-top: 22px;
 }
 .slick-dots button {
   visibility: hidden;
@@ -1227,8 +1150,80 @@ label {
 
 
 
+.carousel.slide {
+  width: 80%;
+  overflow: hidden;
+}
+.carousel-inner {
+  position: relative;
+  padding-bottom: 60px;
+}
 
-// latest news
+.carousel-indicators {
+  margin: 20px 10px;
+  justify-content: flex-start;
+
+  li {
+    opacity: 1;
+    height: 12px;
+    width: 12px;
+    background: #F5FCFD;
+    border: 1.6px solid $primary-dark-color;
+    border-radius: 32px;
+  }
+
+  li.active {
+    width: 38px;
+    height: 12px;
+    background: $primary-dark-color;
+    border-radius: 32px;
+  }
+}
+
+
+// планшет
+@media(min-width: 600px) {
+  .carousel__container {
+    width: 80%;
+  }
+
+}
+
+
+// Large
+@media (min-width: 801px) {
+  .carousel__container {
+    width: 60%;
+  }
+
+  .carousel__header {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .slider {
+    justify-content: space-between;
+  }
+
+  .slider__image {
+    display: flex;
+    background-image: url("../img/Testimonials_Image.png");
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 40%;
+    margin-right: 5%;
+    background-position: right center;
+    background-size: cover;
+  }
+}
+
+
+
+
+
+
+// === latest news ===
 .pages {
   display: flex;
   justify-content: center;
@@ -1283,23 +1278,18 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 
 .news-main__image {
-  // width: 100%;
-  // ?
   width: 300px;
-
-  overflow: hidden;
+  overflow: clip;
   display: flex;
   justify-content: center;
   justify-self: center;
   align-self: center;
   align-items: center;
   margin-bottom: 30px;
-
-  // filter: drop-shadow(0px 4px 20px rgba(0, 70, 156, 0.08));
   border-radius: 5px;
   box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
 }
@@ -1343,12 +1333,12 @@ label {
 
   // ?????
   // сделать обтекание картинки текстом мб для мобилы
-  margin-right: 10px;
+  margin-right: 20px;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .news-others__body {
@@ -1363,7 +1353,7 @@ label {
   //  ///
   font-size: 18px;
   color: #000000;
-  padding-bottom: 25px;
+  padding-bottom: 10px;
 }
 
 .news-others__text {
@@ -1385,8 +1375,8 @@ label {
   }
 
   .news-main__image {
-    width: 100%;
-    overflow: inherit;
+    width: auto;
+    overflow: clip;
   }
 }
 
@@ -1411,6 +1401,9 @@ label {
     justify-content: flex-start;
   }
   
+  .news-others__title {
+    padding-bottom: 25px;
+  }
 
   .news-others__image {
     height: inherit;
@@ -1458,13 +1451,14 @@ label {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 20px;
 }
 
 .trial__info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 30px;
 }
 
@@ -1544,7 +1538,7 @@ label {
 
 
 .footer {
-  height: 125px;
+  height: 150px;
   background-color: $primary-dark-color;
   display: flex;
   justify-content: center;
@@ -1582,7 +1576,7 @@ label {
   padding: 0 0 15px 0;
 }
 
-.footer__item {}
+// .footer__item {}
 
 .footer__link {
   font-weight: 300;
@@ -1594,7 +1588,7 @@ label {
 }
 
 .footer__social {
-  margin: 0 28px;
+  margin: 20px 28px;
 
   
   a {
@@ -1642,13 +1636,19 @@ label {
 
 // Large
 @media (min-width: 801px) {
+  .footer {
+    height: 125px;
+  }
+
   .trial__container {
     justify-content: space-evenly;
     flex-direction: row;
+    padding: 0;
   }
   
   .trial__info {
     padding-bottom: 0;
+    align-items: flex-start;
   }
 
   .subscribe__form {
@@ -1670,6 +1670,7 @@ label {
   
   .footer__social {
     padding-bottom: 0;
+    margin: 0 28px;
   }
   
   .footer__scroll-up {
