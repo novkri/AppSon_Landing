@@ -413,7 +413,7 @@ label {
 }
 
 .features-card {
-  width: 290px;
+  width: 80%;
   min-height: 290px;
   display: flex;
   flex-direction: column;
@@ -467,11 +467,6 @@ label {
 
 // планшет
 @media(min-width: 600px) {
-  .features-container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .features-card {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -481,7 +476,11 @@ label {
 
 
 // Large
-@media (min-width: 801px) {
+@media (min-width: 1185px) {
+  .features-card {
+    width: 290px;
+  }
+
   .features-container {
     height: 336px;
     flex-direction: row;
@@ -511,7 +510,7 @@ label {
 
 // === about ===
 .about {
-  padding: 5rem;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -528,12 +527,9 @@ label {
   grid-row-gap: 3rem;
 }
 
-
-
 .about-card__image {
   display: none;
 }
-// оставить ромбики
 
 .about-card__body {
   max-width: 476px;
@@ -560,7 +556,7 @@ label {
 // планшет
 @media(min-width: 600px) {
   .about {
-    padding: 2rem;
+    padding: 5rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -570,10 +566,9 @@ label {
   .inner--about {
     height: 100%;
     display: grid;  
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  
-    grid-column-gap: 5rem;
+    grid-template-rows: 45% 45%;
+    grid-template-columns: 45% 45%;
+    grid-column-gap: 2rem;
     grid-row-gap: 3rem;
     padding: 0;
   }
@@ -603,7 +598,8 @@ label {
   .about-card__image {
     display: block;
     justify-content: center;
-    width: 300px;
+    // width: 300px;
+    width: auto;
     height: 300px;
     overflow: clip;
     display: flex;
@@ -615,8 +611,16 @@ label {
 
 
 // Large
-// @media (min-width: 801px) {
-// }
+@media (min-width: 801px) {
+  .inner--about {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 5rem;
+  }
+  .about-card__image {
+    width: 300px;
+  }
+}
 
 @media (min-width: 1000px) {
   .about-card__image {
@@ -695,6 +699,7 @@ label {
   color: #000000;
   padding-bottom: 45px;
   max-width: 722px;
+  width: 70%;
 }
 
 .instruction {
@@ -710,8 +715,7 @@ label {
 }
 
 .instruction-card {
-  width: 333px;
-  height: 221px;
+  margin: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -758,6 +762,11 @@ label {
   .how__title {
     font-size: 32px;
   }
+
+  .instruction-card {
+    width: 250px;
+    height: auto;
+  }
 }
 
 
@@ -765,28 +774,36 @@ label {
 // Large
 @media (min-width: 801px) {
   .how {
-    // ????
     padding-top: 5rem;
   }
   
+
   .instruction {
     flex-direction: row;
     height: 221px;
   }
+
   .dots {
     display: block;
     width: 60%;
-    border: 2px dashed #0F7BFF;
+    border-top: 3px dashed #0F7BFF;
     position: absolute;
-    top: 23%;
+    // top: 23%;
+    top: 4%;
     z-index: 0;
-  }  
-  
-  .instruction-card {
-    margin: 0 29px;
   }
 }
 
+@media (min-width: 1200px) {
+  .instruction-card {
+    margin: 0 29px;
+    width: 333px;
+    height: 221px;
+  }
+  .dots {
+    top: 23%;
+  }
+}
 
 
 // === pricing ===
@@ -816,7 +833,6 @@ label {
 
 .choose-plan__title {
   font-weight: 500;
-  // later
   // font-size: 32px;
   font-size: 2rem;
   line-height: 40px;
@@ -955,15 +971,13 @@ label {
 
 
 // Large
-@media (min-width: 801px) {
+@media (min-width: 1200px) {
   .inner--pricing {
     flex-direction: row;
   }
 
   .pricing {
     min-height: 833px;
-    // padding: 5rem 2rem;
-    // ?
     padding: 0;
   }
   
@@ -1084,6 +1098,9 @@ label {
   display: flex;
   flex-direction: column;
   width: 80%;
+
+
+  margin-left: 5%;
 }
 
 .carousel-wrapper {
@@ -1094,7 +1111,6 @@ label {
 .owl-carousel {
   display: flex;
   flex-direction: column;
-  // display: block;
   box-sizing: border-box;
 
   min-width: 0;
@@ -1183,25 +1199,20 @@ label {
 
 // планшет
 @media(min-width: 600px) {
-  .carousel__container {
-    width: 80%;
-  }
-
 }
 
 
 // Large
 @media (min-width: 801px) {
-  .carousel__container {
-    width: 60%;
-  }
-
   .carousel__header {
     text-align: left;
   }
 }
 
 @media (min-width: 1200px) {
+  .carousel__container {
+    width: 60%;
+  }
   .slider {
     justify-content: space-between;
   }
@@ -1235,9 +1246,6 @@ label {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // later
-  // padding: 130px 0;
-  // padding: 10rem;
   padding-top: 5rem;
 }
 
@@ -1328,11 +1336,7 @@ label {
 .news-others__image {
   border-radius: 5px;
   box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
-  // padding-bottom: 30px;
   margin-bottom: 30px;
-
-  // ?????
-  // сделать обтекание картинки текстом мб для мобилы
   margin-right: 20px;
   height: 80px;
   display: flex;
@@ -1382,7 +1386,7 @@ label {
 
 
 // Large
-@media (min-width: 801px) {
+@media (min-width: 1000px) {
   .news__body {
     flex-direction: row;
     padding: 0;
@@ -1593,17 +1597,11 @@ label {
   
   a {
     margin: 0 7.5px;
-
     color: #FFFFFF;
-    // ?
-    // width: 30px;
-    // height: 30px;
   }
 }
 
 .footer__scroll-up {
-  // later 
-  // display: none;
   position: absolute;
   top: -40px;
   right: 20px;
@@ -1654,11 +1652,12 @@ label {
   .subscribe__form {
     width: 558px;
   }
-  
+}
+
+@media (min-width: 1000px) {
   .inner-footer {
     flex-direction: row;
   }
-  
   
   .footer__copyright {
     flex: 1;
@@ -1672,11 +1671,19 @@ label {
     padding-bottom: 0;
     margin: 0 28px;
   }
-  
+
   .footer__scroll-up {
     position: initial;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 9rem;
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .inner {
+    padding: 0 3rem;
   }
 }

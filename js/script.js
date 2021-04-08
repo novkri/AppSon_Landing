@@ -11,18 +11,27 @@ $(document).ready(function() {
       swipe: true,
       dots: true,
       arrows: false,
-      // adaptiveHeight: true,
-      // mobileFirst: true,
-      // respondTo: min,
-      // rows: 1,
-      // variableWidth: true
 
       responsive: [
+        {
+          breakpoint: 1500,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1
+          }
+        },
         {
           breakpoint: 992,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 1,
+            slidesToScroll: 1
           }
         },
         {
