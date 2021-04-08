@@ -905,6 +905,71 @@
   }
 }
 
+.section-testimonials__container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.section-testimonials__container-slider {
+  display: flex;
+  flex-direction: row;
+}
+
+.owl-carousel {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.owl-carousel .slick-dots {
+  display: flex;
+  padding: 10px 5px;
+  align-items: center;
+}
+
+.slick-dots {
+  margin-top: 37px;
+}
+
+.slick-dots button {
+  visibility: hidden;
+}
+
+.slick-dots li {
+  opacity: 1;
+  height: 12px;
+  width: 12px;
+  background: #F5FCFD;
+  border: 1.6px solid #0063DD;
+  border-radius: 32px;
+  cursor: pointer;
+  font-size: 0;
+  transition: all 0.3s ease;
+  margin: 0 5px;
+}
+
+.slick-dots li:hover,
+.slick-dots li:active {
+  width: 38px;
+  background: #0063DD;
+  border-radius: 32px;
+}
+
+.slick-dots > .slick-active {
+  width: 38px;
+  background: #0063DD;
+}
+
 .pages {
   display: flex;
   justify-content: center;
