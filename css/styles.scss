@@ -93,7 +93,7 @@
 }
 
 .navbar.navbar-light, .navbar-expand-lg .navbar-collapse {
-  background-color: transparent;
+  background-color: $bg-light;
 }
 
 .logo {
@@ -309,11 +309,13 @@
   .btn--signup {
     margin: 0;
   }
-  
+}
+
+@media (min-width: 992px) {
   .navbar {
     height: 100px;
   }
-  
+
   .logo {
     font-size: 2rem;
     line-height: 45px;
@@ -321,6 +323,10 @@
     padding: 25px 23px 32px 23px;
   }
 
+  .navbar.navbar-light, .navbar-expand-lg .navbar-collapse {
+    background-color: transparent;
+  }
+  
   .navbar__menu {
     display: flex;
     flex-direction: row;
@@ -355,7 +361,6 @@
     background-size: cover;
   }
 }
-
 
 @media (min-width: 1645px) {
   .navbar {
@@ -563,7 +568,7 @@
     justify-content: center;
     width: auto;
     height: 300px;
-    overflow: clip;
+    overflow: hidden;
     display: flex;
     align-items: baseline;
     border-radius: 25px;
@@ -1226,7 +1231,7 @@
 
 .news-main__image {
   width: 300px;
-  overflow: clip;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   justify-self: center;
@@ -1275,7 +1280,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .news-others__body {
